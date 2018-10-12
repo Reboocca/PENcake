@@ -131,22 +131,6 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\bckgrnd.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\bckgrnd1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\bckgrnd2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\bckgrnd3.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Resources\pancake.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
@@ -158,6 +142,11 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\flip.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\vorm2.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

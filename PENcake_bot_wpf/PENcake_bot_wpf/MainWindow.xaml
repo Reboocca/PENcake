@@ -14,14 +14,14 @@
         WindowStartupLocation="CenterScreen"
         WindowState="Maximized"
         Background="{DynamicResource MaterialDesignPaper}"
-        Title="Homepage" Height="900" Width="1600" FontFamily="Calibri Light">
+        Title="Homepage" Height="900" Width="1600" FontFamily="Calibri Light" Icon="Resources/vorm1.png">
 
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
             <RowDefinition Height="4*"/>
             <RowDefinition Height="25*"/>
-            <RowDefinition Height="5*"/>
+            <RowDefinition Height="3*"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -31,8 +31,8 @@
         </Grid.ColumnDefinitions>
 
         <!-- form -->
-        <Grid Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0" Grid.RowSpan="2" Background="#02b2a5"/>
-        <TextBlock Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" Style="{StaticResource MaterialDesignDisplay2TextBlock}">Klik op een vorm en print hem uit!</TextBlock>
+        <Grid Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0" Grid.RowSpan="2" Background="#FF8E35A8"/>
+        <TextBlock Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" Style="{StaticResource MaterialDesignDisplay2TextBlock}" FontFamily="Calibri Light">Klik op een vorm en print hem uit!</TextBlock>
         <ListBox x:Name="lbVorm" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Grid.Row="2" ScrollViewer.HorizontalScrollBarVisibility="Disabled"  SelectionChanged="lbVorm_Selected">
             <ListBox.Resources>
                 <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="Transparent" />
@@ -45,13 +45,13 @@
                 </ItemsPanelTemplate>
             </ListBox.ItemsPanel>
             <ListBoxItem>
-                <Image Source="Resources/vorm1.png" Height="320" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="30,10,30,30"/>
+                <Image Source="Resources/vorm1.png" Height="335" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="30,10,30,30"/>
             </ListBoxItem>
             <ListBoxItem>
-                <Image Source="Resources/vorm1.png" Height="320" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="30,30,30,30"/>
+                <Image Source="Resources/vorm2.png" Height="335" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="30,30,30,30"/>
             </ListBoxItem>
             <ListBoxItem>
-                <Image Source="Resources/vorm1.png" Height="320" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="30,30,30,30"/>
+                <Image Source="Resources/vorm1.png" Height="335" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="30,30,30,30"/>
             </ListBoxItem>
         </ListBox>
 

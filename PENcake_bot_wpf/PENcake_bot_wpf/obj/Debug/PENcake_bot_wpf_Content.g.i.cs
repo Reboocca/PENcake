@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/flip.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/vorm2.png")]
 
 

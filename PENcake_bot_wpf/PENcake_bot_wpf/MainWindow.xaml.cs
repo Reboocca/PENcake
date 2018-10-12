@@ -45,7 +45,7 @@ namespace PENcake_bot_wpf
             else
             {
                 //Stuur bericht
-                sendVorm(chosenVorm);
+                //sendVorm(chosenVorm);
 
                 //Laad scherm
                 grBlack.Visibility = Visibility.Visible;

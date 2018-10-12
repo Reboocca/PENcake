@@ -15,7 +15,7 @@
         WindowStyle="None"
         AllowsTransparency="True"
         WindowStartupLocation="CenterScreen"
-         Height="350" Width="305" Background="{x:Null}" Loaded="Window_Loaded">
+         Height="350" Width="305" Background="{x:Null}" Loaded="Window_Loaded" Icon="Resources/vorm1.png">
     <Grid>
         <GroupBox x:Name="gbScreen" FontSize="15" Header="De robot is bezig met je pannenkoek te printen" Background="{DynamicResource MaterialDesignPaper}" Margin="3">
             <Grid>
