@@ -17,9 +17,9 @@
         WindowStartupLocation="CenterScreen"
          Height="160" Width="305" Background="{x:Null}">
     <Grid>
-        <GroupBox x:Name="gbMelding" FontSize="15" Header="Warning" Background="{DynamicResource MaterialDesignPaper}" Margin="3">
+        <GroupBox x:Name="gbMelding" FontSize="20" Header="Warning" Background="{DynamicResource MaterialDesignPaper}" Margin="3">
             <Grid>
-                <TextBlock x:Name="tbMessage" Style="{StaticResource MaterialDesignBody1TextBlock}" TextWrapping="Wrap" >MESSAGE HERE</TextBlock>
+                <TextBlock x:Name="tbMessage" Style="{StaticResource MaterialDesignBody1TextBlock}" FontSize="15" TextWrapping="Wrap" >MESSAGE HERE</TextBlock>
                 <Button x:Name="bntOK" Style="{StaticResource MaterialDesignFlatButton}" VerticalAlignment="Bottom" Click="bntOK_Click">
                     OK
                 </Button>

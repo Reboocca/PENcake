@@ -39,13 +39,14 @@ namespace PENcake_bot_wpf
         {
             if(chosenVorm == 0)
             {
-                Melding m = new Melding("shape");
+                Melding m = new Melding("shape", this);
+                grBlack.Visibility = Visibility.Visible;
                 m.ShowDialog();
             }
             else
             {
                 //Stuur bericht
-                //sendVorm(chosenVorm);
+                sendVorm(chosenVorm);
 
                 //Laad scherm
                 grBlack.Visibility = Visibility.Visible;
@@ -84,7 +85,8 @@ namespace PENcake_bot_wpf
             {
                 //kan niet connecten
                 myEv3.Disconnect();
-                Melding m = new Melding("connect");
+                Melding m = new Melding("connect", this);
+                grBlack.Visibility = Visibility.Visible;
                 m.ShowDialog();
                 System.Windows.Application.Current.Shutdown();
             }

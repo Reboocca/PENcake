@@ -19,10 +19,12 @@ namespace PENcake_bot_wpf
     /// </summary>
     public partial class Melding : Window
     {
-        public Melding(string r)
+        MainWindow main = new MainWindow();
+        public Melding(string r, MainWindow f)
         {
             InitializeComponent();
             loadMessage(r);
+            main = f;
         }
 
         private void loadMessage(string reason)
@@ -44,6 +46,7 @@ namespace PENcake_bot_wpf
 
         private void bntOK_Click(object sender, RoutedEventArgs e)
         {
+            main.hideGrid();
             this.Close();
         }
     }

@@ -15,11 +15,15 @@
         WindowStyle="None"
         AllowsTransparency="True"
         WindowStartupLocation="CenterScreen"
-         Height="350" Width="305" Background="{x:Null}" Loaded="Window_Loaded" Icon="Resources/vorm1.png">
+         Height="390" Width="305" Background="{x:Null}" Loaded="Window_Loaded" Icon="Resources/vorm1.png">
     <Grid>
-        <GroupBox x:Name="gbScreen" FontSize="15" Header="De robot is bezig met je pannenkoek te printen" Background="{DynamicResource MaterialDesignPaper}" Margin="3">
+        <GroupBox x:Name="gbScreen" FontSize="20" Header="Pannenkoek is aan het printen" Background="{DynamicResource MaterialDesignPaper}" Margin="3">
             <Grid>
-                <StackPanel x:Name="spLoading" VerticalAlignment="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0*"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <StackPanel x:Name="spLoading" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="0,22">
                     <TextBlock x:Name="tbLaad" Style="{StaticResource MaterialDesignTitleTextBlock}" HorizontalAlignment="Center" Margin="0,5,0,25">Printen</TextBlock>
                     <ProgressBar x:Name="pbLaad" Style="{StaticResource MaterialDesignCircularProgressBar}"  Value="0" IsIndeterminate="True" Width="140" HorizontalAlignment="Center" VerticalAlignment="Center" />
                     <Image Source="Resources/pancake.png" Height="100" VerticalAlignment="Center" HorizontalAlignment="Center" />
@@ -28,14 +32,14 @@
                         <Label  Content="%" VerticalAlignment="Bottom" FontSize="25" HorizontalAlignment="Center" />
                     </StackPanel>
                 </StackPanel>
-                <StackPanel x:Name="spRotate" VerticalAlignment="Center" Visibility="Hidden">
+                <StackPanel x:Name="spRotate" VerticalAlignment="Center" Visibility="Hidden" Grid.ColumnSpan="2" Margin="0,16">
                     <TextBlock Style="{StaticResource MaterialDesignTitleTextBlock}" HorizontalAlignment="Center" Margin="0,5,0,15">Draai de pannenkoek om</TextBlock>
                     <Image Source="Resources/flip.png" Height="145" VerticalAlignment="Center" HorizontalAlignment="Center" />
                     <Button x:Name="btnRotated" Style="{StaticResource MaterialDesignFloatingActionLightButton}" Click="btnRotated_Click" Height="40" Width="40" Margin="0,30,0,0">
                         <materialDesign:PackIcon Kind="Check"  Height="20" Width="20" />
                     </Button>
                 </StackPanel>
-                <StackPanel x:Name="spDone" VerticalAlignment="Center" Visibility="Hidden">
+                <StackPanel x:Name="spDone" VerticalAlignment="Center" Visibility="Hidden" Grid.ColumnSpan="2" Margin="0,24">
 
                     <TextBlock Style="{StaticResource MaterialDesignTitleTextBlock}" HorizontalAlignment="Center" Margin="0,5,0,0">Eet smakelijk!</TextBlock>
                     <TextBlock Style="{StaticResource MaterialDesignSubheadingTextBlock}" HorizontalAlignment="Center" Margin="0,0,0,15">Je pannenkoek is klaar</TextBlock>

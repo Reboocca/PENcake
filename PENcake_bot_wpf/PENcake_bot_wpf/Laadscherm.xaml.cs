@@ -41,6 +41,7 @@ namespace PENcake_bot_wpf
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            //Maak timer aan voor het laden
             dt.Interval         = TimeSpan.FromMilliseconds(500);
             dt.Tick += dtTicker;
             dt.Start();
@@ -48,6 +49,7 @@ namespace PENcake_bot_wpf
 
         private void dtTicker(object sender, EventArgs e)
         {
+            //Zorg voor "Printen . . " animatie
             switch (tbLaad.Text)
             {
                 case "Printen":
@@ -65,7 +67,7 @@ namespace PENcake_bot_wpf
 
             }
 
-            //Voor het draaien
+            //Zolang % lager is dan 50, blijf laden
             if(increment < 50)
             {
                 increment += 1;
@@ -75,6 +77,7 @@ namespace PENcake_bot_wpf
             }
             else if (toggled)
             {
+                //Gebruiker heeft aangegeven gedraaid is
                 gbScreen.Header = "Je pannenkoek is bijna klaar";
                 spRotate.Visibility = Visibility.Hidden;
                 spLoading.Visibility = Visibility.Visible;
@@ -87,6 +90,7 @@ namespace PENcake_bot_wpf
             }
             else
             {
+                //Pannenkoek is op 50%, meldt draaien
                 if (!soundplayed)
                 {
                     gbScreen.Header = "Draai de pannenkoek";
@@ -97,7 +101,7 @@ namespace PENcake_bot_wpf
                 }
             }
 
-            //Pannenkoek klaar
+            //Pannenkoek is 100%, dus klaar
             if(increment == 100)
             {
                 gbScreen.Header = "Je pannenkoek is klaar";
