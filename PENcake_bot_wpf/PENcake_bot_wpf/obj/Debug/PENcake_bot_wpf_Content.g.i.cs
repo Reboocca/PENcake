@@ -9,5 +9,6 @@
 //------------------------------------------------------------------------------
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/vorm2.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/vorm3.png")]
 
 

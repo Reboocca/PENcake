@@ -45,13 +45,13 @@
                 </ItemsPanelTemplate>
             </ListBox.ItemsPanel>
             <ListBoxItem>
-                <Image Source="Resources/vorm1.png" Height="335" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="30,10,30,30"/>
+                <Image Source="Resources/vorm1.png" Height="305" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,10,30,30"/>
             </ListBoxItem>
             <ListBoxItem>
-                <Image Source="Resources/vorm2.png" Height="335" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="30,30,30,30"/>
+                <Image Source="Resources/vorm2.png" Height="335" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="50,30,30,30"/>
             </ListBoxItem>
             <ListBoxItem>
-                <Image Source="Resources/vorm1.png" Height="335" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="30,30,30,30"/>
+                <Image Source="Resources/vorm3.png" Height="335" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="100,30,30,30"/>
             </ListBoxItem>
         </ListBox>
 
